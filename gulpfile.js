@@ -310,8 +310,8 @@ const runPrettier = (onlyStaged, fix, callback) => {
             "test/**/*.ts",
             "gulpfile.js",
             "*.md",
-            "!CHANGELOG.md",
-            "!test/smoke/**",
+            "!CHANGELOG.md", // linting this file will break Azure automatic parsing
+            "!test/smoke/**", //
             "!src/**/*.d.ts",
         ],
         {

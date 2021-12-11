@@ -1219,7 +1219,8 @@
     "vscode-nls-dev": "3.3.2",
     "vscode-test": "^1.6.1",
     "webpack": "5.28.0",
-    "webpack-bundle-analyzer": "4.4.0"
+    "webpack-bundle-analyzer": "4.4.0",
+    "webpack-cli": "^4.9.1"
   },
   "extensionDependencies": [
     "ms-vscode.js-debug"
