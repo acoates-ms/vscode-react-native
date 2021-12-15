@@ -62,7 +62,6 @@ const webpackConfig = {
                             },
                         },
                     },
-                    { loader: "./loader.js" },
                 ],
             },
         ],
@@ -90,27 +89,5 @@ const webpackConfig = {
 };
 
 module.exports = async (env, argv) => {
-    // const tsProject = gulpTs.createProject("tsconfig.json");
-    // Vinyl.es.tsProject
-    //     .src()
-    //     // .pipe(sourcemaps.init())
-    //     .pipe(nls.createMetaDataFiles())
-    //     .pipe(nls.createAdditionalLanguageFiles(defaultLanguages, "i18n"))
-    //     // .pipe(nls.bundleMetaDataFiles("asdsadasda", "dist2"))
-    //     .pipe(nls.bundleLanguageFiles())
-    //     // .pipe(
-    //     //     filter([
-    //     //         "**/nls.bundle.*.json",
-    //     //         "**/nls.metadata.header.json",
-    //     //         "**/nls.metadata.json",
-    //     //         "!src/**",
-    //     //     ]),
-    //     // )
-    //     .pipe(gulp.dest("dist2"));
-
-    // await new Promise(res => {
-    //     setTimeout(res, 1225000);
-    // });
-
     return webpackConfig;
 };
