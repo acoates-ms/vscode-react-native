@@ -21,15 +21,6 @@ const config = {
     languages,
 };
 
-gulp.task("test", async () => {
-    var wr = process.stdout.write;
-    process.stdout.write = () => {};
-    process.stdout.cork();
-    console.log(42);
-    process.stdout.uncork();
-    process.stdout.write = wr;
-});
-
 const buildTranslation = async () => {
     {
         // disables useless logs
